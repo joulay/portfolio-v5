@@ -1,0 +1,36 @@
+ 
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .clearfix:before, .clearfix:after {
+    display: table;
+    content: '';
+  }
+
+
+body {
+    background: #fff;
+    color: #7b7b7b;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Martel Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+
+a {
+  outline: none;
+  color: #81c483;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #333;
+  outline: none;
+}
