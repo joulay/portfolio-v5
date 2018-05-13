@@ -1,4 +1,4 @@
-*, *:after, *:before {
+* {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -22,10 +22,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     overflow: hidden;
     overflow-y: scroll;
-}
-
-.noscroll {
-    overflow: hidden;
 }
 
 a {
@@ -62,10 +58,6 @@ button:focus {
     font-size: 2em;
     line-height: 1;
     font-family: "Playfair Display", serif;
-}
-
-.sidebar h1 span {
-    display: block;
 }
 
 .related {
@@ -152,14 +144,6 @@ button:focus {
     text-align: center;
 }
 
-.title--preview {
-    -webkit-flex: 1;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
 
 .category {
     margin: 0;
@@ -198,12 +182,7 @@ button:focus {
 
 @media screen and (min-width: 900px) {
     .grid {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .grid__item {
@@ -232,7 +211,6 @@ button:focus {
         transition: -webkit-transform 0.3s;
     }
     .sidebar.sidebar--open {
-        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
     .sidebar.sidebar--open~.main {
@@ -254,19 +232,5 @@ button:focus {
     .content__item {
         padding: 80px 20px 40px;
     }
-    .content .close-button {
-        padding: 10px 20px;
-    }
-    .content .close-button::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: #fff;
-        border-bottom: 1px solid #f5f5f5;
-        width: 100vw;
-        height: 50px;
-        pointer-events: none;
-        z-index: -1;
-    }
+
 }
